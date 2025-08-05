@@ -33,10 +33,10 @@ export function MissionSection(): JSX.Element {
         >
           We aim to equip children with the mindset and tools to be everyday
           superheroes through their acts of kindness, empathy, and
-          responsibility. Since 2022, we've been creating products, toolkits,
-          and tours that inspire kids to make a positive impact in their
-          everyday lives. Our goal is to help raise kind humans who live with
-          love and make the world a better place, one small act at a time.
+          responsibility. Since 2022, we&apos;ve been creating products,
+          toolkits, and tours that inspire kids to make a positive impact in
+          their everyday lives. Our goal is to help raise kind humans who live
+          with love and make the world a better place, one small act at a time.
         </p>
       </article>
     </section>
