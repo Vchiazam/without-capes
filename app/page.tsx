@@ -9,7 +9,7 @@ import { ContactUs } from "./modules/contact-us";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="pb-1">
       <Navbar />
       <HeroSection />
       <MissionSection />

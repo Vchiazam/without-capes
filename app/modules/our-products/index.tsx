@@ -18,9 +18,11 @@ export function OurProducts(): JSX.Element {
     { id: 6, name: "Purple Values Journal", price: "N40,000" },
   ];
   return (
-    <section className="px-16">
+    <section className="md:px-16 px-10">
       <main className="flex  justify-center flex-col items-center space-y-10 h-full pt-20">
-        <h1 className="text-[#2CA474] text-7xl">Explore our products</h1>
+        <h1 className="text-[#2CA474] text-4xl md:text-7xl light-text">
+          Explore our products
+        </h1>
 
         <Carousel
           opts={{
@@ -41,7 +43,12 @@ export function OurProducts(): JSX.Element {
                       <div className="flex-1" />
                       <div className="space-y-3">
                         <p className="text-gray-800 text-sm">{product.name}</p>
-                        <p className="text-gray-900 text-3xl font-bold">
+                        <p
+                          className="text-gray-900 text-3xl font-bold medium-text"
+                          // style={{
+                          //   fontWeight: 500,
+                          // }}
+                        >
                           {product.price}
                         </p>
                         <Button

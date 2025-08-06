@@ -131,3 +131,83 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Saker Sans Medium PERSONAL USE";
+  src: url("/fonts/SakerSansMedium_PERSONAL_USE.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.Saker_Medium {
+  font-family: "Saker Sans Medium PERSONAL USE";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display Medium";
+  src: url("/fonts/NeueHaasDisplayMediu.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.NeueHaas {
+  font-family: "Neue Haas Display Medium";
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Light (300) */
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/fonts/NeueHaasDisplayLight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/NeueHaasDisplayRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/fonts/NeueHaasDisplayMediu.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("/fonts/NeueHaasDisplayBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.light-text {
+  font-family: "Neue Haas Display";
+  font-weight: 400;
+}
+
+/* .normal-text {
+  font-family: "Neue Haas Display";
+  font-weight: 500;
+} */
+
+.medium-text {
+  font-family: "Neue Haas Display";
+  font-weight: 500;
+}
+
+.bold-text {
+  font-family: "Neue Haas Display";
+  font-weight: 700;
+}

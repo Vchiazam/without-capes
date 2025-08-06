@@ -1,12 +1,18 @@
 "use client";
 import { JSX } from "react";
+import { Inter } from "next/font/google";
 
+const inter = Inter({ subsets: ["latin"] });
 export function InGoodCompany(): JSX.Element {
   return (
-    <section className="px-16">
+    <section className="md:px-16 px-10 py-12">
       <main className="flex basis-1 items-center justify-center flex-col w-full space-y-4">
-        <h1 className="text-[120px]">In good company!</h1>
-        <p className="text-center max-w-3xl text-[20px] mb-8">
+        <h1 className="md:text-[120px] text-[60px] md:leading-[120px] leading-[40px] Saker_Medium text-[#2CA474]">
+          In good company!
+        </h1>
+        <p
+          className={`text-center max-w-xl md:text-lg text-sm md:font-normal font-light mb-8 text-[#4D4D4D] ${inter.className}`}
+        >
           From teachers to parents and guardians, the general public absolute
           loves Without Capes and find that our products are incredibly helpful
           in raising kids.
@@ -21,7 +27,9 @@ export function InGoodCompany(): JSX.Element {
             />
           ))}
         </div>
-        <h6 className="max-w-96 text-center mt-4 text-base">
+        <h6
+          className={`max-w-96 text-center mt-4 md:text-base  text-sm md:font-normal font-light ${inter.className}`}
+        >
           We&apos;ve also enjoyed the support of incredible organization who
           believe in our mission.
         </h6>

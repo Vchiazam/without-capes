@@ -12,10 +12,10 @@ export function HeroSection(): JSX.Element {
       className="w-full bg-[#F9BB40] "
       role="region"
     >
-      <main className="pl-16 pt-10 flex items-start justify-between w-full gap-7">
-        <div className="md:w-1/2 w-full sm:w-full h-full space-y-8 pt-10">
+      <main className="md:pl-16 pl-0  pt-10 flex items-center justify-between w-full gap-7 ">
+        <div className="md:w-1/2 w-full sm:w-full px-10 md:px-0  h-full space-y-8 py-10 md:py-0 md:-pt-14 pt-10 ">
           <h1
-            className="text-[120px] leading-[120px] font-normal Saker text-white"
+            className="md:text-[120px] text-[80px] md:leading-[120px] leading-[80px] font-normal Saker  text-white"
             aria-label="Nurturing Young Hearts"
           >
             Nurturing
@@ -24,7 +24,7 @@ export function HeroSection(): JSX.Element {
           </h1>
 
           <p
-            className={`text-xl text-[#4D4D4D] font-normal text-justify ${inter.className}`}
+            className={`md:text-xl text-base text-[#4D4D4D] font-normal text-left md:text-justify ${inter.className}`}
           >
             We&apos;re a movement to create a better tomorrow by <br />
             shaping kids to be kind, loving and decent humans, <br />
@@ -51,11 +51,11 @@ export function HeroSection(): JSX.Element {
         </div>
 
         <div
-          className="w-1/2  items-center justify-end hidden sm:hidden md:flex "
+          className="w-full lg:w-1/2 items-baseline -mt-10 lg:-mt-32 justify-end hidden lg:flex"
           role="img"
           aria-label="Hero image or illustration"
         >
-          <Icons.Hero1 className="-mt-32" />
+          <Icons.Hero1 />
         </div>
       </main>
     </section>

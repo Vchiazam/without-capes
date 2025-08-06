@@ -1,6 +1,8 @@
 import { Icons } from "@/app/components/icons";
 import { JSX } from "react";
+import { Inter } from "next/font/google";
 
+const inter = Inter({ subsets: ["latin"] });
 export function MissionSection(): JSX.Element {
   return (
     <section
@@ -14,7 +16,7 @@ export function MissionSection(): JSX.Element {
       >
         <h2
           id="mission-heading"
-          className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center leading-snug max-w-4xl"
+          className="text-2xl sm:text-4xl md:text-5xl font-semibold text-center leading-snug max-w-4xl NeueHaas"
         >
           Our mission is to design products that support character building and
           value-based education by working closely with educators, parents, and
@@ -29,7 +31,7 @@ export function MissionSection(): JSX.Element {
 
         <p
           id="mission-description"
-          className="text-base sm:text-lg md:text-xl font-normal text-center leading-relaxed max-w-3xl"
+          className={`text-sm sm:text-lg md:text-xl font-normal text-center leading-relaxed max-w-xl ${inter.className}`}
         >
           We aim to equip children with the mindset and tools to be everyday
           superheroes through their acts of kindness, empathy, and
