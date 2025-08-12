@@ -15,19 +15,19 @@ export function Navbar(): JSX.Element {
 
   return (
     <nav
-      className="bg-[#D9D9D9] h-[90px] sticky top-0 z-50 px-6 md:px-12 flex items-center justify-between"
+      className="bg-white h-[70px] sticky top-0 z-50 px-6 md:px-12 flex items-center justify-between"
       aria-label="Main navigation"
     >
       {/* Logo */}
       <div className="flex-shrink-0" aria-label="Homepage">
         <Link href="/" aria-label="Home">
-          <Icons.Logo className="h-14 md:h-36" role="img" aria-hidden="true" />
+          <Icons.Logo className="h-10 md:h-20" role="img" aria-hidden="true" />
         </Link>
       </div>
 
       {/* Desktop Nav */}
       <ul
-        className="hidden md:flex bg-transparent p-4 space-x-8 list-none"
+        className="hidden md:flex bg-transparent p-4 space-x-10 list-none"
         role="menubar"
       >
         {navItems.map((item) => (
