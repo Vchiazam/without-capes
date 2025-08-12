@@ -11,11 +11,24 @@ const inter = Inter({ subsets: ["latin"] });
 export function Navbar(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["About", "Products", "Testimonials", "Contact"];
+  const navItems = [
+    { label: "About", target: "about-section" },
+    { label: "Products", target: "products-section" },
+    { label: "Testimonials", target: "testimonials-section" },
+    { label: "Contact", target: "contact-section" },
+  ];
+
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <nav
-      className="bg-white h-[70px] sticky top-0 z-50 px-6 md:px-12 flex items-center justify-between"
+      className="bg-white h-[70px] sticky top-0 z-50 px-6 md:px-12 flex items-center justify-between shadow"
       aria-label="Main navigation"
     >
       {/* Logo */}
@@ -30,15 +43,15 @@ export function Navbar(): JSX.Element {
         className="hidden md:flex bg-transparent p-4 space-x-10 list-none"
         role="menubar"
       >
-        {navItems.map((item) => (
-          <li key={item} role="none">
-            <Link
-              href={`/${item.toLowerCase()}`}
-              className={`${inter.className} text-[#4D4D4D] font-normal focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
+        {navItems.map(({ label, target }) => (
+          <li key={label} role="none">
+            <button
+              onClick={() => handleScroll(target)}
+              className={`${inter.className} cursor-pointer text-[#4D4D4D] font-normal transition-all duration-300 hover:text-[#0A64A2] hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
               role="menuitem"
             >
-              {item}
-            </Link>
+              {label}
+            </button>
           </li>
         ))}
       </ul>
@@ -54,18 +67,17 @@ export function Navbar(): JSX.Element {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-[90px] left-0 w-full bg-[#D9D9D9] shadow-md md:hidden transition-all duration-200">
+        <div className="absolute top-[70px] left-0 w-full bg-white shadow-md md:hidden transition-all duration-200">
           <ul className="flex flex-col space-y-4 p-6" role="menu">
-            {navItems.map((item) => (
-              <li key={item} role="none">
-                <Link
-                  href={`/${item.toLowerCase()}`}
-                  className={`${inter.className} block text-[#4D4D4D] font-normal focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
+            {navItems.map(({ label, target }) => (
+              <li key={label} role="none">
+                <button
+                  onClick={() => handleScroll(target)}
+                  className={`${inter.className} block text-[#4D4D4D] font-normal transition-all duration-300 hover:text-[#0A64A2] hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
                   role="menuitem"
-                  onClick={() => setIsOpen(false)}
                 >
-                  {item}
-                </Link>
+                  {label}
+                </button>
               </li>
             ))}
           </ul>

@@ -18,7 +18,7 @@ export function OurProducts(): JSX.Element {
     { id: 6, name: "Purple Values Journal", price: "N40,000" },
   ];
   return (
-    <section className="md:px-16 px-10">
+    <section className="md:px-16 px-10" id="products-section">
       <main className="flex  justify-center flex-col items-center space-y-10 h-full pt-20">
         <h1 className="text-[#2CA474] text-4xl md:text-7xl light-text">
           Explore our products

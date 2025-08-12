@@ -38,7 +38,13 @@ export function HeroSection(): JSX.Element {
           <div className="flex flex-wrap gap-4">
             <Button
               variant="outline"
-              className="flex h-12 min-w-[150px] bg-transparent cursor-pointer border border-[#0A64A2] text-[#0A64A2] hover:bg-transparent hover:text-[#0A64A2] px-6 py-3 rounded-4xl shadow-none focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F9BB40]"
+              className="
+      flex h-12 min-w-[150px] border border-[#0A64A2] text-[#0A64A2] bg-transparent 
+      rounded-4xl px-6 py-3 cursor-pointer 
+      transition duration-300 ease-in-out
+      hover:bg-white hover:text-[#F9BB40] hover:shadow-md hover:scale-105 hover:border-[#F9BB40]
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F9BB40]
+    "
               aria-label="More About us"
             >
               More About us
@@ -46,7 +52,13 @@ export function HeroSection(): JSX.Element {
 
             <Button
               variant="outline"
-              className="flex h-12 min-w-[150px] bg-[#0A64A2] hover:bg-[#0a65a2f1] cursor-pointer border-none hover:text-white text-white px-6 py-3 rounded-4xl shadow-none focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0A64A2]"
+              className="
+      flex h-12 min-w-[150px] bg-[#0A64A2] text-white border-none rounded-4xl px-6 py-3 cursor-pointer 
+      transition duration-300 ease-in-out
+      hover:bg-[#1565ac] hover:shadow-md hover:scale-105 hover:text-white
+      active:scale-95
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0A64A2]
+    "
               aria-label="Browse and buy products"
             >
               Buy Products

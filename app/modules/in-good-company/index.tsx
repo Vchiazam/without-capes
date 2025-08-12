@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 export function InGoodCompany(): JSX.Element {
   return (
-    <section className="md:px-16 px-10 py-12">
+    <section className="md:px-16 px-10 py-12" id="testimonials-section">
       <main className="flex basis-1 items-center justify-center flex-col w-full space-y-4">
         <h1 className="md:text-[120px] text-[60px] md:leading-[120px] leading-[40px] Saker_Medium text-[#2CA474]">
           In good company!

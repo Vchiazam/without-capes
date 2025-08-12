@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export function ContactUs(): JSX.Element {
   return (
-    <section className="md:px-16 px-10 md:p-20 p-10 ">
+    <section className="md:px-16 px-10 md:p-20 p-10" id="contact-section">
       <main className="md:flex  md:flex-row flex-col gap-8 justify-center">
         <div className="max-w-[349px]  p-2 md:h-[200px]  h-full">
           <header>
