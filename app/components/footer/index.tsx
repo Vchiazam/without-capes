@@ -41,14 +41,14 @@ export const Footer = () => {
 
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>
-          <Icons.footer />
+          <Icons.Logo />
         </div>
         <div className="flex items-center space-x-6 md:mb-0 mb-10">
-          <Icons.facebook />
-          <Icons.Ig />
-          <Icons.threads />
-          <Icons.X />
-          <Icons.tiktok />
+          <Icons.facebook className="size-6" />
+          <Icons.Ig className="size-6" />
+          <Icons.threads className="size-6" />
+          <Icons.X className="size-6" />
+          <Icons.tiktok className="size-6" />
         </div>
       </div>
     </div>

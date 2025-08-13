@@ -14,14 +14,17 @@ export function HeroSection(): JSX.Element {
       role="region"
       className="w-full bg-[#F9BB40] h-[min(calc(100vh-60px),750px)] overflow-hidden"
     >
-      <main className="h-full md:pl-16 pl-4 pt-6 flex items-center justify-between w-full gap-7 overflow-hidden">
-        <div className="md:w-1/2 w-full px-6 md:px-0 h-full flex flex-col justify-center space-y-6">
+      <main className="h-full md:pl-16 pl-4 pt-6 flex flex-col lg:flex-row items-center justify-between w-full gap-7 overflow-hidden">
+        <div className="md:w-1/2 w-full px-6 md:px-0 pt-20 h-full flex flex-col justify-center space-y-6">
           <h1
-            className={`font-normal Saker text-[clamp(2.5rem,7.5vw,7.5rem)] leading-[clamp(2.6rem,7.8vw,7.6rem)] break-words text-white`}
+            className="font-normal Saker text-[clamp(2.5rem,7.5vw,7.5rem)] leading-[clamp(2.6rem,7.8vw,7.6rem)] break-words text-white"
             aria-label="Nurturing Young Hearts"
           >
             Nurturing
-            <br />
+            <span className="hidden md:inline">
+              <br />
+            </span>
+            <span className="inline md:hidden"> </span>
             Young Hearts
           </h1>
 
@@ -66,15 +69,14 @@ export function HeroSection(): JSX.Element {
           </div>
         </div>
 
-        <figure className="hidden lg:flex w-full lg:w-1/2 items-center justify-end h-full ">
-          <div className="h-[100%] max-h-[1000px] w-auto ">
+        <figure className="flex w-full lg:w-1/2 items-center justify-center lg:justify-end h-full order-last lg:order-none mt-6 lg:mt-0">
+          <div className="h-[100%] md:max-h-[1000px]  w-auto ">
             <Image
               alt="Children playing in a classroom"
               src={heroImg}
               className="h-full w-auto object-contain overflow-hidden"
               sizes="(min-width:1024px) 50vw, 100vw"
               priority
-              // placeholder="blur"
             />
           </div>
         </figure>

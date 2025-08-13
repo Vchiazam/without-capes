@@ -47,7 +47,7 @@ export function Navbar(): JSX.Element {
           <li key={label} role="none">
             <button
               onClick={() => handleScroll(target)}
-              className={`${inter.className} cursor-pointer text-[#4D4D4D] font-normal transition-all duration-300 hover:text-[#0A64A2] hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
+              className={`${inter.className} cursor-pointer text-[#4D4D4D] font-normal transition-all duration-300  hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
               role="menuitem"
             >
               {label}
@@ -73,7 +73,7 @@ export function Navbar(): JSX.Element {
               <li key={label} role="none">
                 <button
                   onClick={() => handleScroll(target)}
-                  className={`${inter.className} block text-[#4D4D4D] font-normal transition-all duration-300 hover:text-[#0A64A2] hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
+                  className={`${inter.className} block text-[#4D4D4D] font-normal transition-all duration-300  hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
                   role="menuitem"
                 >
                   {label}

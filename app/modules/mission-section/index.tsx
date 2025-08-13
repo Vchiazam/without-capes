@@ -32,7 +32,7 @@ export function MissionSection(): JSX.Element {
 
         <p
           id="mission-description"
-          className={`text-[clamp(0.9rem,1.8vw,1.1rem)] font-normal text-center leading-relaxed max-w-xl ${inter.className}`}
+          className={`text-[clamp(0.9rem,1.8vw,1.1rem)] font-normal text-center leading-relaxed max-w-2xl ${inter.className}`}
         >
           We aim to equip children with the mindset and tools to be everyday
           superheroes through their acts of kindness, empathy, and

@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export function ContactUs(): JSX.Element {
   return (
-    <section className="md:px-16 px-10 md:p-20 p-10" id="contact-section">
-      <main className="md:flex  md:flex-row flex-col gap-8 justify-center">
+    <section className="md:px-16 px-10 md:p-16 p-10" id="contact-section">
+      <main className="md:flex  md:flex-row flex-col items-center gap-12 justify-center">
         <div className="max-w-[349px]  p-2 md:h-[200px]  h-full">
           <header>
             <h1 className="w-[326px]  light-text text-[55px] leading-[55px] text-[#2CA474]  font-normal pb-[3rem]">
@@ -28,7 +28,9 @@ export function ContactUs(): JSX.Element {
             <span className="text-center">Send Message</span>
           </Button>
         </div>
-        <div className="md:w-[547px] w-full bg-[#FF5548] rounded-4xl p-2 md:h-[300px] h-[150px]"></div>
+        <div className="md:w-[547px] w-full bg-[#FF5548] rounded-4xl p-2 md:h-fit h-[150px] overflow-hidden">
+          <Icons.Contact1 />
+        </div>
       </main>
     </section>
   );
