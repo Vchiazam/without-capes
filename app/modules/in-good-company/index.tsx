@@ -20,13 +20,13 @@ export function InGoodCompany(): JSX.Element {
   }));
 
   return (
-    <section className="md:px-16 px-10 py-24" id="testimonials-section">
+    <section className="md:px-16 px-10 pt-24" id="testimonials-section">
       <main className="flex basis-1 items-center justify-center flex-col w-full space-y-8">
-        <h1 className="md:text-[120px] text-[60px] md:leading-[120px] leading-[40px] Saker text-[#2CA474]">
+        <h1 className="md:text-[120px] text-[50px] md:leading-[120px] leading-[40px] Saker text-[#2CA474]">
           In good company!
         </h1>
         <p
-          className={`text-center max-w-xl md:text-lg text-sm md:font-normal font-light mb-8 text-[#4D4D4D] ${inter.className}`}
+          className={`text-center max-w-xl md:text-[18px] text-sm md:font-normal font-light mb-8 text-[#4D4D4D] ${inter.className}`}
         >
           From teachers to parents and guardians, the general public absolute
           loves Without Capes and find that our products are incredibly helpful
@@ -78,7 +78,7 @@ export function InGoodCompany(): JSX.Element {
         </div>
 
         <h6
-          className={`max-w-96 text-center mt-10 md:text-base text-[#4D4D4D] text-sm md:font-normal font-normal ${inter.className}`}
+          className={`max-w-96 text-center mt-8 md:text-[18px] text-[#4D4D4D] text-sm md:font-normal font-normal ${inter.className}`}
         >
           We&apos;ve also enjoyed the support of incredible organization who
           believe in our mission.

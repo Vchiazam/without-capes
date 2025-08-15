@@ -1,9 +1,9 @@
 import { JSX } from "react";
 import { Inter } from "next/font/google";
 import { Button } from "../../components/ui/button";
-import { Icons } from "../../components/icons";
 import Image from "next/image";
 import heroImg from "@/public/Hero 1 1.svg";
+import heroMobile from "@/public/Hero 1M.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +12,7 @@ export function HeroSection(): JSX.Element {
     <section
       aria-label="Hero section"
       role="region"
-      className="w-full bg-[#F9BB40] h-[min(calc(100vh-60px),750px)] overflow-hidden"
+      className="w-full bg-[#F9BB40] md:h-[min(calc(100vh-60px),750px)] h-fit overflow-hidden"
     >
       <main className="h-full md:pl-16 pl-4 pt-6 flex flex-col lg:flex-row items-center justify-between w-full gap-7 overflow-hidden">
         <div className="md:w-1/2 w-full px-6 md:px-0 pt-20 h-full flex flex-col justify-center space-y-6">
@@ -38,11 +38,11 @@ export function HeroSection(): JSX.Element {
             empathy, and responsibility.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex  gap-4 w-full">
             <Button
               variant="outline"
               className="
-      flex h-12 min-w-[150px] border border-[#0A64A2] text-[#0A64A2] bg-transparent 
+      flex h-12 md:min-w-[150px] min-w-[80px] border border-[#0A64A2] text-[#0A64A2] bg-transparent 
       rounded-4xl px-6 py-3 cursor-pointer 
       transition duration-300 ease-in-out
       hover:bg-white hover:text-[#F9BB40] hover:shadow-md hover:scale-105 hover:border-[#F9BB40]
@@ -56,7 +56,7 @@ export function HeroSection(): JSX.Element {
             <Button
               variant="outline"
               className="
-      flex h-12 min-w-[150px] bg-[#0A64A2] text-white border-none rounded-4xl px-6 py-3 cursor-pointer 
+      flex h-12 md:min-w-[150px] min-w-[80px] bg-[#0A64A2] text-white border-none rounded-4xl px-6 py-3 cursor-pointer 
       transition duration-300 ease-in-out
       hover:bg-[#1565ac] hover:shadow-md hover:scale-105 hover:text-white
       active:scale-95

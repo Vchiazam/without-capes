@@ -11,8 +11,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Journal1 from "@/public/Superheroes Journal - Green.jpg";
-import Journal2 from "@/public/Superheroes Journal - Red.jpg";
+import Journal1 from "@/public/Green Values Journal.png";
+import Journal2 from "@/public/Red Values Journal.png";
 import Link from "next/link";
 
 export function OurProducts(): JSX.Element {
@@ -21,28 +21,28 @@ export function OurProducts(): JSX.Element {
     {
       id: 1,
       name: "Green Life Values Journal",
-      price: "₦35,000",
+      price: "N35,000",
       img: Journal1,
       link: "https://selfany.com/f44uHO",
     },
     {
       id: 2,
       name: "Red Life Values Journal",
-      price: "₦35,000",
+      price: "N35,000",
       img: Journal2,
       link: "https://selfany.com/withoutcapes",
     },
     {
       id: 3,
       name: "Green Life Values Journal",
-      price: "₦35,000",
+      price: "N35,000",
       img: Journal1,
       link: "https://selfany.com/f44uHO",
     },
     {
       id: 4,
       name: "Red Life Values Journal",
-      price: "₦35,000",
+      price: "N35,000",
       img: Journal2,
       link: "https://selfany.com/withoutcapes",
     },
@@ -70,17 +70,17 @@ export function OurProducts(): JSX.Element {
               >
                 <Card className="border-0 shadow-none">
                   <CardContent className="p-0">
-                    <div className="bg-[#F9BB40]  overflow-hidden rounded-3xl items-center justify-center p -6 h-[500px] w-full flex flex-col">
-                      <div className="flex-1 bg-[#D9D9D9]">
+                    <div className="bg-[#F9BB40]  overflow-hidden rounded-3xl items-center justify-center p -6 h-[450px] w-full flex flex-col">
+                      <div className="h-full bg-[#D9D9D9]">
                         <Image
                           alt="Children playing in a classroom"
                           src={product.img}
-                          className="h-full w-auto object-contain overflow-hidden -rotate-45 -mt-10"
+                          className="h-full w-auto object-contain overflow-hidden"
                           sizes="(min-width:1024px) 50vw, 100vw"
                           priority
                         />
                       </div>
-                      <div className="space-y-2 p-6">
+                      <div className="space-y-2 p-6 h-1/2">
                         <p className="text-[#231F20] text-sm font-medium">
                           {product.name}
                         </p>

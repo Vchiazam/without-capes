@@ -1,6 +1,9 @@
 import { Icons } from "@/app/components/icons";
 import { JSX } from "react";
 import { Inter } from "next/font/google";
+import MobileImg from "@/public/Illustration 1M.svg";
+import DesktopImg from "@/public/Illustration 1.svg";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 export function MissionSection(): JSX.Element {
@@ -17,22 +20,31 @@ export function MissionSection(): JSX.Element {
       >
         <h2
           id="mission-heading"
-          className="text-2xl sm:text-4xl md:text-5xl font-semibold text-center leading-snug max-w-4xl NeueHaas"
+          className="text-xl sm:text-4xl md:text-5xl font-semibold text-center leading-snug max-w-4xl NeueHaas"
         >
           Our mission is to design products that support character building and
           value-based education by working closely with educators, parents,
           guardians and the government.
         </h2>
 
-        <Icons.Illu
-          className="h-[120px] sm:h-[160px] md:h-[300px] w-full"
+        <Image
+          className="h-[150px] sm:h-[160px] md:h-[300px] w-full"
           role="presentation"
           aria-hidden="true"
+          src={DesktopImg}
+          alt=""
         />
+        {/* <Image
+          className="h-[150px] sm:h-[160px] md:h-[300px] w-full  md:hidden block"
+          role="presentation"
+          aria-hidden="true"
+          src={MobileImg}
+          alt=""
+        /> */}
 
         <p
           id="mission-description"
-          className={`text-[clamp(0.9rem,1.8vw,1.1rem)] font-normal text-center leading-relaxed max-w-2xl ${inter.className}`}
+          className={`text-[clamp(0.8rem,1.8vw,1.1rem)] font-normal text-center leading-relaxed max-w-2xl ${inter.className}`}
         >
           We aim to equip children with the mindset and tools to be everyday
           superheroes through their acts of kindness, empathy, and
