@@ -70,7 +70,7 @@ export function OurProducts(): JSX.Element {
               >
                 <Card className="border-0 shadow-none">
                   <CardContent className="p-0">
-                    <div className="bg-[#F9BB40]  overflow-hidden rounded-3xl items-center justify-center p -6 h-[450px] w-full flex flex-col">
+                    <div className="bg-[#F9BB40]  overflow-hidden rounded-3xl items-center justify-center h-[485px] md:h-[450px] w-full flex flex-col">
                       <div className="h-full bg-[#D9D9D9]">
                         <Image
                           alt="Children playing in a classroom"
@@ -94,7 +94,7 @@ export function OurProducts(): JSX.Element {
                         </p>
                         <Link href={product.link} target="_blank">
                           <Button
-                            className="bg-white text-gray-800 hover:bg-gray-100 rounded-full px-6 py-2 text-sm font-medium w-full"
+                            className="bg-white  text-gray-800 hover:bg-gray-100 rounded-full px-6 py-2 text-sm font-medium w-full"
                             size="sm"
                           >
                             Buy
