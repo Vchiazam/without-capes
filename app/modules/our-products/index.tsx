@@ -80,7 +80,7 @@ export function OurProducts(): JSX.Element {
                           priority
                         />
                       </div>
-                      <div className="space-y-2 p-6 h-1/2">
+                      <div className="space-y-2 p-6 pb-8 h-1/2">
                         <p className="text-[#231F20] text-sm font-medium">
                           {product.name}
                         </p>

@@ -15,36 +15,31 @@ export function MissionSection(): JSX.Element {
       id="about-section"
     >
       <article
-        className="bg-[#0A64A2] text-white flex flex-col items-center justify-center rounded-[40px] p-6 md:px-20 md:py-24 gap-12"
+        className="bg-[#0A64A2] text-white flex flex-col items-center justify-center rounded-[40px]  p-6 md:px-20 md:py-24 gap-12"
         aria-describedby="mission-description"
       >
         <h2
           id="mission-heading"
-          className="text-xl sm:text-4xl md:text-5xl font-semibold text-center leading-snug max-w-4xl NeueHaas"
+          className="text-xl sm:text-4xl md:text-5xl font-semibold text-center md:mt-0 mt-10 leading-snug max-w-4xl NeueHaas"
         >
           Our mission is to design products that support character building and
           value-based education by working closely with educators, parents,
           guardians and the government.
         </h2>
 
-        <Image
-          className="h-[150px] sm:h-[160px] md:h-[300px] w-full"
-          role="presentation"
-          aria-hidden="true"
-          src={DesktopImg}
-          alt=""
-        />
-        {/* <Image
-          className="h-[150px] sm:h-[160px] md:h-[300px] w-full  md:hidden block"
-          role="presentation"
-          aria-hidden="true"
-          src={MobileImg}
-          alt=""
-        /> */}
+        <div className="rounded-3xl overflow-hidden">
+          <Image
+            className="h-[180px] sm:h-[160px] md:h-[300px] w-full object-cover"
+            role="presentation"
+            aria-hidden="true"
+            src={DesktopImg}
+            alt=""
+          />
+        </div>
 
         <p
           id="mission-description"
-          className={`text-[clamp(0.8rem,1.8vw,1.1rem)] font-normal text-center leading-relaxed max-w-2xl ${inter.className}`}
+          className={`text-[clamp(0.8rem,1.8vw,1.1rem)] font-normal md:mb-0 mb-10 text-center leading-relaxed max-w-2xl ${inter.className}`}
         >
           We aim to equip children with the mindset and tools to be everyday
           superheroes through their acts of kindness, empathy, and
