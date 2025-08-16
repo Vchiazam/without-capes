@@ -22,7 +22,7 @@ export function InGoodCompany(): JSX.Element {
   return (
     <section className="md:px-16 px-10 pt-24" id="testimonials-section">
       <main className="flex basis-1 items-center justify-center flex-col w-full space-y-8">
-        <h1 className="md:text-[120px] text-[50px] md:leading-[120px] leading-[40px] Saker text-[#2CA474]">
+        <h1 className="md:text-[120px] text-[50px] whitespace-nowrap md:leading-[120px] leading-[40px] Saker text-[#2CA474]">
           In good company!
         </h1>
         <p

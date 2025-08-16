@@ -9,13 +9,17 @@ import { ContactUs } from "./modules/contact-us";
 
 export default function Home() {
   return (
-    <div className="pb-1">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <HeroSection />
-      <MissionSection />
-      <OurProducts />
-      <InGoodCompany />
-      <ContactUs />
+
+      <main className="flex-1">
+        <HeroSection />
+        <MissionSection />
+        <OurProducts />
+        <InGoodCompany />
+        <ContactUs />
+      </main>
+
       <Footer />
     </div>
   );

@@ -30,7 +30,7 @@ export function ContactUs(): JSX.Element {
             <span className="text-center">Send Message</span>
           </Button>
         </div>
-        <div className="w-full max-w-[547px] bg-[#FF5548] rounded-4xl p-2 h-[150px] md:h-auto overflow-hidden">
+        <div className="w-full max-w-[547px] bg-[#FF5548] rounded-4xl p-2 h-[150px] md:h-auto overflow-x-hidden">
           <Image
             alt=""
             src={desktopImg}

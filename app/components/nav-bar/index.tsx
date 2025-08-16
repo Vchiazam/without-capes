@@ -28,7 +28,7 @@ export function Navbar(): JSX.Element {
 
   return (
     <nav
-      className="bg-white h-[70px] sticky top-0 z-50 px-6 md:px-12 flex items-center justify-between shadow"
+      className="bg-white h-[70px] sticky top-0 z-50 px-6 lg:px-12 flex items-center justify-between shadow"
       aria-label="Main navigation"
     >
       {/* Logo */}

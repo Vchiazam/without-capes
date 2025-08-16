@@ -27,7 +27,7 @@ export function MissionSection(): JSX.Element {
           guardians and the government.
         </h2>
 
-        <div className="rounded-3xl overflow-hidden">
+        <div className="rounded-3xl overflow-x-hidden">
           <Image
             className="h-[180px] sm:h-[160px] md:h-[300px] w-full object-cover"
             role="presentation"
