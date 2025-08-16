@@ -14,7 +14,7 @@ export function HeroSection(): JSX.Element {
       className="w-full hero-section bg-[#F9BB40] lg:h-[min(calc(100vh-60px),750px)] h-fit overflow-hidden"
     >
       <main className="h-full lg:pl-16 pl-4 pt-6 flex flex-col md:flex-row items-center justify-between w-full gap-7 overflow-hidden">
-        <div className="md:w-1/2 w-full px-6 md:px-0 lg:pt-20 h-full flex flex-col justify-center space-y-6">
+        <div className="md:w-1/2 w-full px-6 md:px-0 pt-10 lg:pt-0  h-full flex flex-col justify-center space-y-6">
           <h1
             className="
     font-normal Saker 
