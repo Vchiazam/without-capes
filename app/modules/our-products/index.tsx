@@ -85,12 +85,7 @@ export function OurProducts(): JSX.Element {
                         <p className="text-[#231F20] text-sm font-medium">
                           {product.name}
                         </p>
-                        <p
-                          className="text-gray-900 text-3xl font-bold medium-text text-center"
-                          // style={{
-                          //   fontWeight: 500,
-                          // }}
-                        >
+                        <p className="text-gray-900 text-3xl font-bold medium-text text-center">
                           {product.price}
                         </p>
                         <Link href={product.link} target="_blank">
