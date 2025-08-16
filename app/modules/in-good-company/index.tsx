@@ -102,12 +102,12 @@ export function InGoodCompany(): JSX.Element {
                       />
                     </div>
                     <p
-                      className={`max-w-[28em] h-[100px]  flex items-center justify-center text-center md:text-[11px] text-white text-[8px] md:font-semibold font-normal ${inter.className}`}
+                      className={`max-w-[28em] h-[100px]  flex items-center justify-center text-center md:text-[12px] text-white text-[8px] md:font-semibold font-normal ${inter.className}`}
                     >
                       {testimonial.text}
                     </p>
                     <p
-                      className={`text-white text-sm h-[40px] font-normal flex items-center md:text-[11px] justify-center  break-words max-w-[200px] text-center ${inter.className}`}
+                      className={`text-white text-sm h-[40px] font-normal flex items-center md:text-[12px] justify-center  break-words max-w-[200px] text-center ${inter.className}`}
                     >
                       {testimonial.name}
                     </p>
