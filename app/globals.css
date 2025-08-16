@@ -211,3 +211,46 @@
   font-family: "Neue Haas Display";
   font-weight: 700;
 }
+
+/* iPad Pro Portrait */
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .hero-section {
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 4px;
+  }
+}
+
+/* iPad Pro Landscape */
+@media only screen and (width: 1366px) and (height: 1024px) {
+  .hero-section {
+    flex-direction: row;
+    gap: 4rem;
+    height: 100%;
+  }
+}
+@media only screen and (device-width: 540px) and (device-height: 720px) {
+  .products {
+    height: 38em;
+  }
+}
+
+@media only screen and (device-width: 1800px) and (device-height: 1350px) {
+  .products {
+    height: 200em;
+  }
+}
+
+/* Surface Pro 7 portrait */
+@media only screen and (device-width: 912px) and (device-height: 1368px) and (-webkit-device-pixel-ratio: 2) {
+  .products {
+    height: 35em;
+  }
+}
+
+/* Surface Pro 7 landscape */
+@media only screen and (device-width: 2736px) and (device-height: 1824px) and (-webkit-device-pixel-ratio: 2) {
+  .products {
+    height: 35em;
+  }
+}

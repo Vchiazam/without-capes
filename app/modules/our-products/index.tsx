@@ -70,7 +70,7 @@ export function OurProducts(): JSX.Element {
               >
                 <Card className="border-0 shadow-none">
                   <CardContent className="p-0">
-                    <div className="bg-[#F9BB40]  overflow-hidden rounded-3xl items-center justify-center h-[485px] lg:h-[450px] w-full flex flex-col">
+                    <div className="bg-[#F9BB40]  overflow-hidden rounded-3xl items-center justify-center products h-[485px] lg:h-[450px] w-full flex flex-col">
                       <div className="h-full bg-[#D9D9D9]">
                         <Image
                           alt="Children playing in a classroom"

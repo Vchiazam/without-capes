@@ -11,13 +11,18 @@ export function HeroSection(): JSX.Element {
     <section
       aria-label="Hero section"
       role="region"
-      className="w-full bg-[#F9BB40] lg:h-[min(calc(100vh-60px),750px)] h-fit overflow-hidden"
+      className="w-full hero-section bg-[#F9BB40] lg:h-[min(calc(100vh-60px),750px)] h-fit overflow-hidden"
     >
       <main className="h-full lg:pl-16 pl-4 pt-6 flex flex-col md:flex-row items-center justify-between w-full gap-7 overflow-hidden">
         <div className="md:w-1/2 w-full px-6 md:px-0 lg:pt-20 h-full flex flex-col justify-center space-y-6">
           <h1
-            className="font-normal Saker text-[clamp(2.5rem,7.5vw,7.5rem)] leading-[clamp(2.6rem,7.8vw,7.6rem)] break-words text-white"
-            aria-label="Nurturing Young Hearts"
+            className="
+    font-normal Saker 
+    text-[clamp(2.5rem,7.5vw,7.5rem)] 
+    leading-[3.2rem]   /* base: taller on mobile */
+    md:leading-[clamp(2.6rem,7.8vw,7.6rem)] 
+    break-words text-white
+  "
           >
             Nurturing
             <span className="hidden md:inline">
