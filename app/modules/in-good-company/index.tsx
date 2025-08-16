@@ -15,6 +15,7 @@ import Av3 from "@/public/Avatars-03.png";
 import Av4 from "@/public/Avatars-04.png";
 import Av5 from "@/public/Avatars-06.png";
 import Image from "next/image";
+import SponsorsMarquee from "./sponsors-marquee";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -127,6 +128,9 @@ export function InGoodCompany(): JSX.Element {
           believe in our mission.
         </h6>
       </main>
+      <section className="mt-10">
+        <SponsorsMarquee />
+      </section>
     </section>
   );
 }

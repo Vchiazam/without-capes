@@ -254,3 +254,22 @@
     height: 35em;
   }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: portrait) {
+  /* custom CSS */
+  /* .hero-section {
+    flex-direction: column;
+    height: 100em;
+    padding-bottom: 4px;
+  } */
+}
+
+/* Any iPad Landscape (Mini → Pro 12.9) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+  /* custom CSS */
+  /* .hero-section {
+    flex-direction: column;
+    height: 100em;
+    padding-bottom: 4px;
+  } */
+}
