@@ -107,7 +107,7 @@ export function InGoodCompany(): JSX.Element {
                       {testimonial.text}
                     </p>
                     <p
-                      className={`text-white text-sm h-[40px] font-normal flex items-center justify-center  break-words max-w-[200px] text-center ${inter.className}`}
+                      className={`text-white text-sm h-[40px] font-normal flex items-center md:text-[11px] justify-center  break-words max-w-[200px] text-center ${inter.className}`}
                     >
                       {testimonial.name}
                     </p>
