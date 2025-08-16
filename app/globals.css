@@ -273,18 +273,23 @@
     padding-bottom: 4px;
   } */
 }
-
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
-.animate-marquee {
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-inner {
   display: flex;
-  min-width: 100%;
+  width: max-content;
   animation: marquee 20s linear infinite;
 }
