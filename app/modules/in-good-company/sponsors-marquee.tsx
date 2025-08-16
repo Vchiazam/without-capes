@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import sp1 from "@/public/sponsors/Greenspring.jpg";
 import sp2 from "@/public/sponsors/The-RiverBank-School-Logo-Changing-Website2.png";
 import sp3 from "@/public/sponsors/fbis_technologies_ltd_logo.jpeg";
@@ -18,80 +17,41 @@ const sponsors = [
   { name: "sponsor-5", logo: sp5 },
   { name: "sponsor-6", logo: sp6 },
   { name: "sponsor-7", logo: sp7 },
+  { name: "sponsor-5-1", logo: sp5 },
+  //   { name: "The-RiverBank-School-2", logo: sp2 },
 ];
 
 export default function SponsorsMarquee() {
-  const marqueeRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const marquee = marqueeRef.current;
-    if (!marquee) return;
-
-    const scrollWidth = marquee.scrollWidth;
-    const clientWidth = marquee.clientWidth;
-
-    let animationId: number;
-    let position = 0;
-    const speed = 0.5;
-
-    const animate = () => {
-      position -= speed;
-
-      if (Math.abs(position) >= scrollWidth / 2) {
-        position = 0;
-      }
-
-      marquee.style.transform = `translateX(${position}px)`;
-      animationId = requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    return () => {
-      if (animationId) {
-        cancelAnimationFrame(animationId);
-      }
-    };
-  }, []);
-
   return (
     <div className="w-full overflow-hidden bg-[#F2F2F2] py-8">
-      <div
-        ref={marqueeRef}
-        className="flex items-center gap-16 whitespace-nowrap"
-        style={{ width: "max-content" }}
-      >
-        {sponsors.map((sponsor, index) => (
-          <div key={`first-${index}`} className="flex-shrink-0">
-            <Image
-              src={sponsor.logo || "/placeholder.svg"}
-              alt={sponsor.name}
-              className="h-8 w-auto object-contain opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-            />
-          </div>
-        ))}
+      <div className="relative flex overflow-hidden">
+        <div className="flex animate-marquee whitespace-nowrap gap-16">
+          {sponsors.map((sponsor, index) => (
+            <div key={`first-${index}`} className="flex-shrink-0">
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                className="h-8 w-auto object-contain hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+        </div>
 
-        {/* Duplicate set for seamless loop */}
-        {sponsors.map((sponsor, index) => (
-          <div key={`second-${index}`} className="flex-shrink-0">
-            <Image
-              src={sponsor.logo || "/placeholder.svg"}
-              alt={sponsor.name}
-              className="h-8 w-auto object-contain opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-            />
-          </div>
-        ))}
-
-        {/* Third set for extra smoothness */}
-        {sponsors.map((sponsor, index) => (
-          <div key={`third-${index}`} className="flex-shrink-0">
-            <Image
-              src={sponsor.logo || "/placeholder.svg"}
-              alt={sponsor.name}
-              className="h-8 w-auto object-contain opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-            />
-          </div>
-        ))}
+        {/* duplicate for infinite loop */}
+        <div
+          aria-hidden="true"
+          className="flex animate-marquee whitespace-nowrap gap-16"
+        >
+          {sponsors.map((sponsor, index) => (
+            <div key={`second-${index}`} className="flex-shrink-0">
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                className="h-8 w-auto object-contain hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -25,10 +25,16 @@ export function ContactUs(): JSX.Element {
             Send us a quick message, or email us at{" "}
             <span className="font-bold">hello@withoutcapes.com</span>
           </p>
-          <Button className=" h-[40px] hover:bg-[#25d365f1] bg-[#25D366] rounded-full  px-4  text-white flex items-center justify-between space-x-2">
-            <Icons.whatsapp className="size-5" />
-            <span className="text-center">Send Message</span>
-          </Button>
+          <a
+            href="https://wa.me/2349090236330"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="h-[40px] hover:bg-[#25d365f1] bg-[#25D366] rounded-full px-4 text-white flex items-center justify-between space-x-2">
+              <Icons.whatsapp className="size-5" />
+              <span className="text-center">Send Message</span>
+            </Button>
+          </a>
         </div>
         <div className="w-full max-w-[547px] bg-[#FF5548] rounded-4xl p-2 h-[150px] md:h-auto overflow-x-hidden">
           <Image

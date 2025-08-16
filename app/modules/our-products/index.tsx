@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Journal1 from "@/public/Green Values Journal.png";
 import Journal2 from "@/public/Red Values Journal.png";
+import Superheroes from "@/public/Superheroeas.png";
 import Link from "next/link";
 
 export function OurProducts(): JSX.Element {
@@ -34,10 +35,10 @@ export function OurProducts(): JSX.Element {
     },
     {
       id: 3,
-      name: "Green Life Values Journal",
-      price: "N35,000",
-      img: Journal1,
-      link: "https://selfany.com/f44uHO",
+      name: "Superheroes without capes",
+      price: "N7,500",
+      img: Superheroes,
+      link: "https://selfany.com/swc",
     },
     {
       id: 4,

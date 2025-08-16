@@ -1,3 +1,4 @@
+"use client";
 import { JSX } from "react";
 import { Inter } from "next/font/google";
 import { Button } from "../../components/ui/button";
@@ -7,6 +8,12 @@ import heroImg from "@/public/Hero 1 1.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 export function HeroSection(): JSX.Element {
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <section
       aria-label="Hero section"
@@ -53,6 +60,7 @@ export function HeroSection(): JSX.Element {
       focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F9BB40]
     "
               aria-label="More About us"
+              onClick={() => handleScroll("about-section")}
             >
               More About us
             </Button>
@@ -67,6 +75,7 @@ export function HeroSection(): JSX.Element {
       focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0A64A2]
     "
               aria-label="Browse and buy products"
+              onClick={() => handleScroll("products-section")}
             >
               Buy Products
             </Button>
