@@ -28,11 +28,7 @@ const sponsors = [
 export default function SponsorsMarquee() {
   return (
     <div className="w-full bg-[#F2F2F2] py-8">
-      <Marquee
-        gradient={false} // no fading edges
-        speed={40} // pixels per second
-        pauseOnHover // pause when hovered
-      >
+      <Marquee gradient={false} speed={40} pauseOnHover>
         {sponsors.map((sponsor, index) => (
           <div key={index} className="mx-8 flex-shrink-0">
             <Image
