@@ -94,7 +94,7 @@ export function InGoodCompany(): JSX.Element {
                     tabIndex={0}
                     role="article"
                     aria-label={`Testimonial from ${testimonial.name}`}
-                    className="bg-[#2CA474] space-y-3 rounded-3xl p-1 flex flex-col items-center justify-center h-[18em]  focus:outline-none focus:ring-2 focus:ring-[#2CA474] focus:ring-offset-2"
+                    className="bg-[#2CA474] space-y-4 rounded-3xl p-1 px-7.5 flex flex-col items-center py-10 h-[23em]  focus:outline-none focus:ring-2 focus:ring-[#2CA474] focus:ring-offset-2"
                   >
                     <div className="size-20 bg-[#D9D9D9] rounded-full justify-center items-center flex">
                       <Image
@@ -103,12 +103,12 @@ export function InGoodCompany(): JSX.Element {
                       />
                     </div>
                     <p
-                      className={`max-w-[28em] h-[100px]  flex items-center justify-center text-center md:text-[12px] text-white text-[8px] md:font-semibold font-normal ${inter.className}`}
+                      className={`max-w-[28em]    flex  text-center md:text-[14px] text-white text-[12px] md:font-semibold font-normal ${inter.className}`}
                     >
                       {testimonial.text}
                     </p>
                     <p
-                      className={`text-white text-sm h-[40px] font-normal flex items-center md:text-[12px] justify-center  break-words max-w-[200px] text-center ${inter.className}`}
+                      className={`text-white text-[10px] h-[40px]  font-normal flex items-center md:text-[12px] justify-center  break-words max-w-[200px] text-center ${inter.className}`}
                     >
                       {testimonial.name}
                     </p>

@@ -23,7 +23,7 @@ export function ContactUs(): JSX.Element {
           >
             Do you have enquiries or are you interested in supporting our work?
             Send us a quick message, or email us at{" "}
-            <span className="font-bold">hello@withoutcapes.com</span>
+            <span className="font-bold">Info@withoutcapes.ng</span>
           </p>
           <a
             href="https://wa.me/2349090236330"

@@ -6,6 +6,7 @@ import { MissionSection } from "./modules/mission-section";
 import { OurProducts } from "./modules/our-products";
 import { InGoodCompany } from "./modules/in-good-company";
 import { ContactUs } from "./modules/contact-us";
+import { OurVideo } from "./modules/our-video";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         <MissionSection />
         <OurProducts />
         <InGoodCompany />
+        <OurVideo />
+
         <ContactUs />
       </main>
 

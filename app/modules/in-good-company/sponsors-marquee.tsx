@@ -1,15 +1,18 @@
 "use client";
 
 import Marquee from "react-fast-marquee";
-import sp1 from "@/public/sponsors/Greenspring.jpg";
-import sp2 from "@/public/sponsors/The-RiverBank-School-Logo-Changing-Website2.png";
-import sp3 from "@/public/sponsors/fbis_technologies_ltd_logo.jpeg";
-import sp4 from "@/public/sponsors/images (1).jpeg";
-import sp5 from "@/public/sponsors/images (2).png";
-import sp6 from "@/public/sponsors/mghs-llogo.jpg";
-import sp7 from "@/public/sponsors/unified-Payments.jpg";
-import sp8 from "@/public/sponsors/new.png";
-import sp9 from "@/public/sponsors/images (1).png";
+import sp1 from "@/public/sponsors/Greenspring.png";
+import sp2 from "@/public/sponsors/riverbank.png";
+import sp3 from "@/public/sponsors/fbis.png";
+import sp4 from "@/public/sponsors/Beehive.png";
+import sp5 from "@/public/sponsors/Greenwood.png";
+import sp6 from "@/public/sponsors/methodist-girls.png";
+import sp7 from "@/public/sponsors/unified-Payments.png";
+import sp8 from "@/public/sponsors/alphageek.png";
+import sp9 from "@/public/sponsors/payattitude.png";
+import sp10 from "@/public/sponsors/bells.png";
+import sp11 from "@/public/sponsors/kings-college.png";
+import sp12 from "@/public/sponsors/Greenspring.jpg";
 
 import Image from "next/image";
 
@@ -23,6 +26,9 @@ const sponsors = [
   { name: "sponsor-7", logo: sp7 },
   { name: "sponsor-8", logo: sp8 },
   { name: "sponsor-9", logo: sp9 },
+  { name: "sponsor-10", logo: sp10 },
+  { name: "sponsor-11", logo: sp11 },
+  //   { name: "sponsor-12", logo: sp12 },
 ];
 
 export default function SponsorsMarquee() {
